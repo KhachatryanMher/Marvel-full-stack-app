@@ -1,0 +1,136 @@
+.header{
+	display: flex;
+	align-items: center;
+	background-color: #ed1d24;
+	padding: 5px;
+}
+body {
+	border: 0px;
+}
+#logo {
+	width: 150px;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	padding-left: 40%;
+}
+
+ul {
+	display: flex;
+	padding: 10px;
+	justify-content: flex-end;
+}
+li{
+	list-style-type: none;
+	padding-right: 5px;
+	font-size: 25px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.authentication {
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
+}
+
+#logIn {
+	background-color: #fff9f9;
+	border-radius: 5px;
+	padding: 2.5px 10px 7px 10px;
+	color: black;
+	font-size: 18px;
+	font-family: 'Redressed', cursive;
+}
+
+.main{
+	display: flex;
+	justify-content: space-around;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+.wandavision{
+	width: 310px;
+	padding-top: 10px;
+}
+#wanda{
+	width: 300px;
+}
+
+.WinterSoldier{
+	width: 310px;
+	padding-top: 10px;
+}
+.Loki{
+	width: 310px;
+	padding-top: 10px;
+}
+#Loki{
+	width: 300px;
+}
+.mHawkeye{
+	display: flex;
+	align-items: center;
+	margin: 20px;
+	margin-left: 65px;
+}
+.hawkeye{
+	width: 310px;
+	padding: 27px;
+	padding-top: 10px;
+}
+#hawkeye{
+	width: 300px;
+}
+#redBtn{
+	background: #ff0400;
+	margin-right: 20px;
+	padding: 8px;
+	border: 1px solid #ff0400;
+	border-radius: 8px;
+	font-family: Calibri Light;
+}
+#blueBtn{
+	background: #003542;
+	padding: 8px;
+	border: 1px solid #003542;
+	font-family: Calibri Light;
+	border-radius: 8px;
+}
+#info{
+	font-family: Calibri Light;
+}
+.footer{
+	display: flex;
+	align-items: center;
+	background-color: #ed1d24;
+	padding: 7px;
+}
+.fa {
+  padding: 7px;
+  font-size: 25px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+
+}
+.fa:hover {
+  opacity: 0.7;
+}
+#fEnd{
+	padding-left: 45%;
+	color: white;
+	font-family: 'Redressed', cursive;
+}
+#avenger{
+	width: 100%;
+}

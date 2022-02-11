@@ -1,0 +1,33 @@
+.header{
+	display: flex;
+   justify-content: space-between;
+	align-items: center;
+	background-color: #ed1d24;
+	padding: 5px;
+}
+#logo {
+	width: 150px;
+	align-items: center;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+} 
+
+.authentication {
+	display: flex;
+	align-items: center;
+   justify-content: center;
+	padding-left: 2%;
+   
+}
+
+#logIn {
+	background-color: #fff9f9;
+	border-radius: 5px;
+	padding: 2.5px 10px 7px 10px;
+	color: #000000;
+	font-size: 18px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

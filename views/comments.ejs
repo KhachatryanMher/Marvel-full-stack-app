@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%- include ('../include_modules/head.ejs') %>
+</head>
+
+<body>
+	<%- include ('../include_modules/header.ejs') %>
+	<link rel="stylesheet" type="text/css" href="comments-style.css">
+		<!----------------------------------------------------HEADER END-------------------------------------------------->
+		<img id="avenger" src="avengers.jpg">
+		<div class="main">
+			<form method="POST" action="/comments">
+				<!-- action po default будет ссылатся на свой корень как тут -->
+				<input type="text" name="theme" placeholder="Theme">
+				<br>
+				<input type="text" name="name" placeholder="Name">
+				<br>
+				<input type="email" name="email" placeholder="Email">
+				<br>
+				<textarea name="text" placeholder="We would be so happy to have your opinion"></textarea>
+				<br>
+				<input value="Submit" type="submit">
+			</form>
+			<div class="adress">
+				<h3 style="font-family: 'Redressed', cursive">You can find us at these addresses</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.890959130393!2d44.47943682918607!3d40.19651912309514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd719b57919b%3A0x6f5b51aee4e64196!2z0KLRg9C80L4!5e0!3m2!1sru!2s!4v1615459229283!5m2!1sru!2s"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+		<% if (typeof(posts) !== 'undefined') { %>
+			<h3 style="font-family: 'Redressed', cursive; margin-left: 90px;">Top Comments</h3>
+			<% posts.forEach(({name, createdAt, text, _id}) => { %>
+			<div class="comment">
+				<article>
+					<span style="font-family: Calibri"><%= name %></span>
+					<span id="date"><%= new Date(createdAt).toLocaleDateString() %></span><br>
+					<p><%= text %></p>
+					<button data-id="<%= _id %>" ><img data-id="<%= _id %>" id="trashBox" src="trash icon.png"></button>
+				</article>
+			</div>
+			<% }) %>
+		<% } %>
+		<script>
+			document.addEventListener('click', event => {
+				const id = event.target?.dataset?.id || null;
+				if (id) {
+					fetch(`/comments/:${id}`, {
+						method: 'DELETE',
+					})
+					.then( () => {
+							window.location.reload();
+					});
+				}
+			})
+		</script>
+		
+		<!----------------------------------------------------MAIN END----------------------------------------------->
+
+		<%- include ('../include_modules/footer.ejs') %>
+
+		<!----------------------------------------------------FOOTER END----------------------------------------------->
+
+</body>
+
+</html>

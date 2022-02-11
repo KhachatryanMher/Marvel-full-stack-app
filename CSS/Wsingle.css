@@ -1,0 +1,106 @@
+.header{
+	display: flex;
+	align-items: center;
+	background-color: #ed1d24;
+	padding: 5px;
+}
+
+#logo{
+	width: 150px;
+	align-items: center;
+}
+
+ul{
+	display: flex;
+	padding: 10px;
+	justify-content: flex-end;
+	padding-left: 53% /*65%*/;
+}
+li{
+	font-size: 25px;
+	list-style-type: none;
+	padding-right: 5px;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.authentication {
+	display: flex;
+	align-items: center;
+	padding-left: 2%;
+}
+
+#logIn {
+	background-color: #fff9f9;
+	border-radius: 5px;
+	padding: 2.5px 10px 7px 10px;
+	color: #000000;
+	font-size: 18px;
+	font-family: 'Redressed', cursive;
+}
+
+#avenger{
+	width: 100%;
+}
+
+
+
+.main{
+	display: flex;
+	padding: 110px;
+	align-items: center;
+	justify-content: center;
+}
+img{
+	padding-right: 20px;
+	width: 650px;
+}
+#redBtn{
+	background: #ff0400;
+	margin-right: 20px;
+	padding: 8px;
+	border: 1px solid #ff0400;
+	border-radius: 8px;
+	font-family: Calibri Light;
+}
+#blueBtn{
+	background: #003542;
+	padding: 10px;
+	border: 1px solid #003542;
+	border-radius: 8px;
+	font-family: Calibri Light;
+}
+p{
+	font-family: 'Akaya Telivigala', cursive;
+}
+h2{
+	font-family: 'Akaya Telivigala', cursive;
+}
+
+
+
+.footer{
+	display: flex;
+	align-items: center;
+	background-color: #ed1d24;
+	padding: 7px;
+}
+.fa {
+  padding: 7px;
+  font-size: 25px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+
+}
+.fa:hover {
+  opacity: 0.7;
+}
+#fEnd{
+	padding-left: 45%;
+	color: white;
+	font-family: 'Redressed', cursive;
+}

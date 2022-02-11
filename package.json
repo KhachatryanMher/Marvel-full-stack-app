@@ -1,0 +1,29 @@
+{
+  "name": "marvel-fan-web-page-in-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon --require dotenv/config server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.6",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "engines": {
+    "node": "16.13.0"
+  }
+}
