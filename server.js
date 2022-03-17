@@ -10,7 +10,7 @@ app.use(express.static('CSS'));
 app.use(express.static('img'));
 app.set('view engine', 'ejs');
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded( { extended: false } ));
 
 mongoose
     .connect(process.env.DB_URL, {
