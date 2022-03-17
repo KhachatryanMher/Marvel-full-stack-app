@@ -10,15 +10,15 @@ app.use(express.static('CSS'));
 app.use(express.static('img'));
 app.set('view engine', 'ejs');
 app.use(express.json());
-app.use(express.urlencoded( { extended: false } ));
+app.use(express.urlencoded({ extended: false }));
 
 mongoose
-    .connect(process.env.DB_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    })
-    .then((res) => console.log(chalk.cyan("...Connected to DB")))
-    .catch((err) => console.log(err));
+   .connect(process.env.DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+   })
+   .then((res) => console.log(chalk.cyan("...Connected to DB")))
+   .catch((err) => console.log(err));
 
 app.get('/', (req, res) => {
    res.render('index.ejs');
