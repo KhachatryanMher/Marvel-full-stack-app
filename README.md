@@ -1,14 +1,14 @@
 # Marvel-full-stack-app
 Full-stack Beta web page in node.js
 
-# How to open this app?
+## How to open this app?
 npm install | Installing all dependences and packages
 npm run dev | Starts nodejs application
 
-# For what do I can't work with database
+## For what do I can't work with database
 Because you should add your own mongoDB base URL in the .env file
 
-# API documentation
+## API documentation
 `/api/comments` Method = Get | show all comments (it doesn't using tokens)
 `/api/comment`  Method = Post | add new comment 
    JSON structure
