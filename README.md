@@ -28,3 +28,7 @@ Because you should add your own mongoDB base URL in the .env file
       "email": "text@examples.net", 
       "theme": "string123"
    }
+
+## availability
+the beta version of this site is availabled in heroku
+http://marvel-web-app-node.herokuapp.com
