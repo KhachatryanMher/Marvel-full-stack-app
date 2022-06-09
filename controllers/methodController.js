@@ -8,7 +8,7 @@ function handleErr(res, err) {
 const getComms = (req, res) => {
    Post
       .find()
-      .sort({ createdAt: -1 }) //sorting from old to new
+      .sort({ createdAt: -1 }) // sorting from old to new
       .then((posts) => res.render('comments.ejs', { posts }))
       .catch((err) => handleErr(res, err));
 };

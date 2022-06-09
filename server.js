@@ -60,6 +60,13 @@ app.get('*', (req, res) => {
    res.render('404.ejs');
 });
 
+app.use((err, req, res, next) => {
+   console.log({ err });
+   return res
+      .status(500)
+      .send('Something went wrong, please try again');
+});
+
 app.listen(port, () => {
    console.log(chalk.cyan(`Server is run, PORT: ${port}`));
-})
+});

@@ -49,9 +49,9 @@
                <% } %>
                   <script>
                      document.addEventListener('click', event => {
-                        const id = event.target?.dataset?.id || null;
+                        const id = event.target?.dataset?.id;
                         if (id) {
-                           fetch(`/comments/:${id}`, {
+                           fetch(`/comments/:${id}`, { //not tested
                               method: 'DELETE',
                            })
                               .then(() => {
