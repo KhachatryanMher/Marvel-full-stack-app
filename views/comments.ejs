@@ -51,7 +51,7 @@
                      document.addEventListener('click', event => {
                         const id = event.target?.dataset?.id;
                         if (id) {
-                           fetch(`/comments/:${id}`, { //not tested
+                           fetch(`/comments/:${id}`, { // not tested
                               method: 'DELETE',
                            })
                               .then(() => {

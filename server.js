@@ -5,7 +5,7 @@ const chalk = require('chalk');
 const commApiRoutes = require('./routes/api-comm-routes.js');
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 const dbUrl = process.env.DB_URL || "mongodb+srv://Admin:HLvukpR3FgcbxJT@cluster0.eyar2.mongodb.net/MarvelApp?retryWrites=true&w=majority";
 app.use(express.static('CSS'));
 app.use(express.static('img'));

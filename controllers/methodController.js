@@ -16,8 +16,7 @@ const getComms = (req, res) => {
 const addComms = (req, res) => {
    const { text, name, email, theme } = req.body;
    const post = new Post({ text, name, email, theme });
-   post
-      .save()
+   post.save()
       .then((result) => res.redirect('/comments')/* res.render('comments.ejs', { result }) */)
       .catch((err) => handleErr(res, err));
 };

@@ -7,7 +7,7 @@ function handleErr(err, res){
 const getComms = (req, res) => {
     Post
         .find()
-        .sort( { createdAt: -1 } ) //sorting from old to new
+        .sort( { createdAt: -1 } ) // sorting from old to new
         .then((posts) => res.status(200).json(posts))
         .catch((err) => handleErr(err, res));
 };

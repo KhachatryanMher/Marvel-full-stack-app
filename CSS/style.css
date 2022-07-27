@@ -59,11 +59,12 @@ h2{
 	justify-content: center;
 }
 img{
-	padding-right: 20px;
 	width: 500px;
 }
 #redBtn{
+	margin-top: 10px;
 	background: #ff0400;
+	white-space: nowrap;
 	margin-right: 20px;
 	padding: 8px;
 	border: 1px solid #ff0400;
@@ -72,6 +73,7 @@ img{
 }
 #blueBtn{
 	background: #003542;
+	white-space: nowrap;
 	padding: 8px;
 	border: 1px solid #003542;
 	border-radius: 8px;
